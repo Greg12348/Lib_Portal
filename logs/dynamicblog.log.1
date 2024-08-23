@@ -1,0 +1,128 @@
+2023-12-11 16:00:20,029 ERROR: Exception on /messages [GET] [in E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py:825]
+Traceback (most recent call last):
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\app\routes.py", line 212, in messages
+    Message.timestamp.desc()).paginate(
+                              ^^^^^^^^^
+TypeError: Query.paginate() takes 1 positional argument but 4 were given
+2023-12-11 16:02:21,167 INFO: Dynamicblog startup [in E:\Python\dynamicblog\app\__init__.py:50]
+2023-12-11 16:02:24,487 ERROR: Exception on /messages [GET] [in E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py:825]
+Traceback (most recent call last):
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\app\routes.py", line 218, in messages
+    return render_template('messages.html', title='Messages', messages=messages.items,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\templating.py", line 151, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: messages.html
+2023-12-11 16:04:06,679 INFO: Dynamicblog startup [in E:\Python\dynamicblog\app\__init__.py:50]
+2023-12-11 17:05:22,249 INFO: Dynamicblog startup [in E:\Python\dynamicblog\app\__init__.py:50]
+2023-12-15 10:43:57,129 INFO: Dynamicblog startup [in E:\Python\dynamicblog\app\__init__.py:53]
+2023-12-15 10:52:02,955 INFO: Dynamicblog startup [in E:\Python\dynamicblog\app\__init__.py:53]
+2023-12-15 11:06:26,538 INFO: Dynamicblog startup [in E:\Python\dynamicblog\app\__init__.py:53]
+2023-12-15 11:11:25,077 INFO: Dynamicblog startup [in E:\Python\dynamicblog\app\__init__.py:53]
+2023-12-15 11:12:11,904 INFO: Dynamicblog startup [in E:\Python\dynamicblog\app\__init__.py:53]
+2023-12-15 11:15:57,679 INFO: Dynamicblog startup [in E:\Python\dynamicblog\app\__init__.py:53]
+2023-12-15 11:25:32,318 INFO: Dynamicblog startup [in E:\Python\dynamicblog\app\__init__.py:53]
+2023-12-15 11:26:56,893 ERROR: Exception on /search [GET] [in E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py:825]
+Traceback (most recent call last):
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\app\routes.py", line 231, in search
+    if not g.search_form.validate():
+           ^
+  File "C:\Users\91940\AppData\Local\Programs\Python\Python312\Lib\bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91940\AppData\Local\Programs\Python\Python312\Lib\bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+                      ^^^^^^^^^^^^^
+bdb.BdbQuit
+2023-12-15 11:27:12,873 INFO: Dynamicblog startup [in E:\Python\dynamicblog\app\__init__.py:53]
+2023-12-15 11:30:48,309 ERROR: Exception on /search [GET] [in E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py:825]
+Traceback (most recent call last):
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\app\routes.py", line 231, in search
+    if not g.search_form.validate():
+           ^
+  File "C:\Users\91940\AppData\Local\Programs\Python\Python312\Lib\bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91940\AppData\Local\Programs\Python\Python312\Lib\bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+                      ^^^^^^^^^^^^^
+bdb.BdbQuit
+2023-12-15 11:33:33,868 INFO: Dynamicblog startup [in E:\Python\dynamicblog\app\__init__.py:53]

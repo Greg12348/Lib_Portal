@@ -1,0 +1,143 @@
+2023-12-04 19:54:09,619 INFO: Dynamicblog startup [in E:\Python\dynamicblog\app\__init__.py:46]
+2023-12-04 20:46:34,912 INFO: Dynamicblog startup [in E:\Python\dynamicblog\app\__init__.py:46]
+2023-12-04 20:49:02,503 INFO: Dynamicblog startup [in E:\Python\dynamicblog\app\__init__.py:46]
+2023-12-04 21:26:25,338 INFO: Dynamicblog startup [in E:\Python\dynamicblog\app\__init__.py:46]
+2023-12-04 21:26:33,095 INFO: Dynamicblog startup [in E:\Python\dynamicblog\app\__init__.py:46]
+2023-12-04 21:37:24,353 INFO: Dynamicblog startup [in E:\Python\dynamicblog\app\__init__.py:46]
+2023-12-04 22:21:27,915 INFO: Dynamicblog startup [in E:\Python\dynamicblog\app\__init__.py:46]
+2023-12-04 22:56:30,168 INFO: Dynamicblog startup [in E:\Python\dynamicblog\app\__init__.py:46]
+2023-12-05 15:51:40,952 INFO: Dynamicblog startup [in E:\Python\dynamicblog\app\__init__.py:46]
+2023-12-05 15:56:04,699 INFO: Dynamicblog startup [in E:\Python\dynamicblog\app\__init__.py:46]
+2023-12-05 16:02:22,130 INFO: Dynamicblog startup [in E:\Python\dynamicblog\app\__init__.py:46]
+2023-12-05 16:06:15,822 INFO: Dynamicblog startup [in E:\Python\dynamicblog\app\__init__.py:46]
+2023-12-05 16:08:08,405 INFO: Dynamicblog startup [in E:\Python\dynamicblog\app\__init__.py:46]
+2023-12-05 16:36:04,031 INFO: Dynamicblog startup [in E:\Python\dynamicblog\app\__init__.py:46]
+2023-12-05 16:36:07,967 ERROR: Exception on / [GET] [in E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py:825]
+Traceback (most recent call last):
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\app\routes.py", line 21, in index
+    posts = current_user.followed_posts().paginate(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Query.paginate() takes 1 positional argument but 4 were given
+2023-12-05 16:36:16,774 ERROR: Exception on /index [GET] [in E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py:825]
+Traceback (most recent call last):
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\app\routes.py", line 21, in index
+    posts = current_user.followed_posts().paginate(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Query.paginate() takes 1 positional argument but 4 were given
+2023-12-05 16:36:26,245 ERROR: Exception on /index [GET] [in E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py:825]
+Traceback (most recent call last):
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\app\routes.py", line 21, in index
+    posts = current_user.followed_posts().paginate(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Query.paginate() takes 1 positional argument but 4 were given
+2023-12-05 16:47:58,134 INFO: Dynamicblog startup [in E:\Python\dynamicblog\app\__init__.py:46]
+2023-12-05 16:48:02,418 ERROR: Exception on / [GET] [in E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py:825]
+Traceback (most recent call last):
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\app\routes.py", line 21, in index
+    posts = current_user.followed_posts().paginate(page, 3, False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Query.paginate() takes 1 positional argument but 4 were given
+2023-12-05 16:48:21,102 ERROR: Exception on /index [GET] [in E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py:825]
+Traceback (most recent call last):
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\app\routes.py", line 21, in index
+    posts = current_user.followed_posts().paginate(page, 3, False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Query.paginate() takes 1 positional argument but 4 were given
+2023-12-05 16:52:28,252 INFO: Dynamicblog startup [in E:\Python\dynamicblog\app\__init__.py:46]
+2023-12-05 16:52:32,825 ERROR: Exception on / [GET] [in E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py:825]
+Traceback (most recent call last):
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python\dynamicblog\app\routes.py", line 26, in index
+    if posts.hasp_prev else None
+       ^^^^^^^^^^^^^^^
+AttributeError: 'QueryPagination' object has no attribute 'hasp_prev'. Did you mean: 'has_prev'?
+2023-12-05 16:53:21,452 INFO: Dynamicblog startup [in E:\Python\dynamicblog\app\__init__.py:46]
